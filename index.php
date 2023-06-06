@@ -7,6 +7,9 @@
     <title>Projeto agenda</title>
 </head>
 <body>
-    
+   <ul>
+        <li><a href="cadastro_agenda.html">Cadastrar</a></li>
+        <li><a href="listar_agenda.php">Listar</a></li>
+   </ul>
 </body>
 </html>
