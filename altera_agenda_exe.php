@@ -1,12 +1,12 @@
 <?php
     include('conexao.php');
-    /*$nome_foto = "";
+    $nome_foto = "";
     if(file_exists($_FILES['foto']['tmp_name'])){
         $pasta_destino = 'fotos/';
         $extensao = strtolower(substr($_FILES['foto']['name'],-4));
         $nome_foto = $pasta_destino . date('Ymd-hist') . $extensao;
         move_uploaded_file($_FILES['foto']['tmp_name'], $nome_foto);
-    }*/
+    }
     $id_agenda = $_POST['id_agenda'];
     $nome = $_POST['nome'];
     $apelido = $_POST['apelido'];
@@ -28,7 +28,8 @@
             cidade ='$cidade',
             estado ='$estado',
             telefone = '$telefone',
-            celular = '$celular',  
+            celular = '$celular',
+            foto='$nome_foto',
             email ='$email' 
             WHERE id_agenda=$id_agenda"; 
             //Comando que funciona apenas no banco de dados

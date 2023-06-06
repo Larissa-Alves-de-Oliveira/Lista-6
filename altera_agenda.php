@@ -73,6 +73,7 @@
                 <input type="text" name="email" id="email"
                 value="<?php echo $row['email']?>">
             </div>
+            <input type="file" name="foto" id="foto" accept="image/*">
             <button type="submit">Salvar</button>
         </fieldset>
     </form>

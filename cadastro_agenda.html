@@ -7,7 +7,7 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <form action="cadastro_agenda.php" method="post">
+    <form action="cadastro_agenda.php" method="post" enctype="multipart/form-data">
         <fieldset>
             <legend>Cadastro agenda</legend>
             <div>
@@ -46,6 +46,7 @@
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email">
             </div>
+            <input type="file" name="foto" id="foto" accept="image/*"><br>
             <button>Cadastrar</button>
         </fieldset>
     </form>

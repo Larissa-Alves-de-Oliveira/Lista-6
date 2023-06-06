@@ -20,6 +20,7 @@
     <table align="center" border="1" width="500">
         <tr>
             <th>Código</th>
+            <th>Imagem</th>
             <th>Nome</th>
             <th>Apelido</th>
             <th>Endereco</th>
@@ -29,6 +30,9 @@
             <th>Telefone</th>
             <th>Celular</th>
             <th>Email</th>
+            <th>Data do cadastro</th>
+            <th>Alterar</th>
+            <th>Excluir</th>
         </tr>
         <?php
             do{
@@ -36,11 +40,11 @@
                 {
                     echo "<tr>";
                     echo "<td>".$row['id_agenda']."</td>";
-                    /*if($row['foto'] == "")
+                    if($row['foto'] == "")
                         echo "<td></td>";
                     else
                         echo "<td><img src = '".$row['foto'].
-                        "' width = '80' height='100'/></td>";*/
+                        "' width = '80' height='100'/></td>";
                     echo "<td>".$row['nome']."</td>";
                     echo "<td>".$row['apelido']."</td>";
                     echo "<td>".$row['endereco']."</td>";
@@ -50,6 +54,7 @@
                     echo "<td>".$row['telefone']."</td>";
                     echo "<td>".$row['celular']."</td>";
                     echo "<td>".$row['email']."</td>";
+                    echo "<td>".$row['dt_cadastro']."</td>";
                     echo "<td><a href='altera_agenda.php?id_agenda=" .$row['id_agenda']. "'>Alterar</a></td>";
                     echo "<td><a href='excluir_usuario_exe.php?id_agenda=" .$row['id_agenda']. "'>Deletar</a></td>";
                     echo "</tr>";
