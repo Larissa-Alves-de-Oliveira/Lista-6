@@ -20,7 +20,7 @@
 
     echo "<h1>Alteração de dados</h1>";
     echo "<p>Usuário: $nome</p>";
-    $sql = "UPDATE usuario SET
+    $sql = "UPDATE agenda SET 
             nome ='$nome',
             apelido ='$apelido',
             endereco = '$endereco',
@@ -29,14 +29,15 @@
             estado ='$estado',
             telefone = '$telefone',
             celular = '$celular',  
-            email ='$email',
+            email ='$email' 
             WHERE id_agenda=$id_agenda"; 
             //Comando que funciona apenas no banco de dados
     echo $sql;
     $result = mysqli_query($con,$sql); //Envia as informações para o banco de dados
-    if($result)
+    if($result){
         echo "Dados alterados com sucesso!<br>";
-    else
-        echo "Erro ao alterar dados: $msqli_erro($con)"
+    }else{
+        echo "Erro ao alterar dados: ". $mysqli_error($con) ." !";
+    }
 ?>
 <a href="index.php">Voltar</a>
