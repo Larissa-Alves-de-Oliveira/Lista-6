@@ -8,14 +8,14 @@
         move_uploaded_file($_FILES['foto']['tmp_name'], $nome_foto);
     }
     $id_agenda = $_POST['id_agenda'];
-    $nome = $_POST['nome'];
-    $apelido = $_POST['apelido'];
+    $nome = $_POST['inputNome'];
+    $apelido = $_POST['inputApelido'];
     $endereco = $_POST['endereco'];
-    $bairro = $_POST['bairro'];
-    $cidade = $_POST['cidade'];
-    $estado = $_POST['estado'];
-    $telefone = $_POST['telefone'];
-    $celular = $_POST['celular'];
+    $bairro = $_POST['inputBairro'];
+    $cidade = $_POST['inputCidade'];
+    $estado = $_POST['inputEstado'];
+    $telefone = $_POST['inputTelefone'];
+    $celular = $_POST['inputCelular'];
     $email = $_POST['email']; //Recebendo valores do campo formulário
 
     echo "<h1>Alteração de dados</h1>";
